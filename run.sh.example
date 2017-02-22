@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker run -d\
+    --name jitterbit \
+    --env JB_USERNAME=your@email.tld \
+    --env JB_PASSWORD=jitterbit_password \
+    --env JB_ORGANIZATION=organization name \
+    --env JB_AGENTGROUP=agent group name \
+    --env JB_AGENT=agent name \
+    -p 46914:46914 \
+    -t wakumaku/jitterbit:8.17.0.2
