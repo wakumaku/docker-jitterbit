@@ -5,6 +5,7 @@ services:
 
 before_install:
   - docker build -t wakumaku/jitterbit_test .
-  - docker run -d --name jitterbit_test -t wakumaku/jitterbit_test
 
-script: ./.travis.sh
+script:
+  - docker run -d --name jitterbit_test -t wakumaku/jitterbit_test
+  - ./.travis.sh
