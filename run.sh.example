@@ -8,4 +8,4 @@ docker run -d\
     --env JB_AGENTGROUP=agent group name \
     --env JB_AGENT=agent name \
     -p 46914:46914 \
-    -t wakumaku/jitterbit:8.17.0.2
+    -t wakumaku/jitterbit:latest
