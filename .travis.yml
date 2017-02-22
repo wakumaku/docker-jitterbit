@@ -6,6 +6,5 @@ services:
 before_install:
   - docker build -t wakumaku/jitterbit_test .
   - docker run -d --name jitterbit_test -t wakumaku/jitterbit_test
-  - wait 20
 
 script: ./.travis.sh
