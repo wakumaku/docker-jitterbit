@@ -1,12 +1,11 @@
 #!/bin/bash
-set -ev
+# set -ev
 
-MAX_ITERATIONS=6
-TIMEOUT_ITERARION=5
+TIMEOUT_ITERATION=5
 
-sleep 15
+sleep 5
 
-for i in {1..${MAX_ITERATIONS}}; do
+for i in {1..5}; do
     STATUS=`docker exec -t jitterbit_test jitterbit status || true`
     echo "Checking service status ..."
     echo "${STATUS}"
@@ -14,7 +13,7 @@ for i in {1..${MAX_ITERATIONS}}; do
     if [ "${ASSERT}" == 1 ]; then
         exit 0
     fi
-    sleep ${TIMEOUT_ITERARION}
+    sleep ${TIMEOUT_ITERATION}
 done
 
 exit 1
