@@ -3,17 +3,6 @@ sudo: required
 services:
   - docker
 
-install:
-  - docker build -t wakumaku/jitterbit_test .
-  - docker run -d --name jitterbit_test -t wakumaku/jitterbit_test
-
 script:
-  - docker ps | grep -q jitterbit_test
-  - echo "Wait while jitterbit is initializing for the firtst time"
-  - ./.travis.sh 20
-  - docker exec -t jitterbit_test jitterbit stop
-  - docker stop jitterbit_test
-  - docker start jitterbit_test
-  - docker ps | grep -q jitterbit_test 
-  - docker exec -t jitterbit_test jitterbit start 
-  - ./.travis.sh 1
+  - docker build --label=jitterbit_test -t wakumaku/jitterbit_test .
+  - docker images -f "label=jitterbit_test" | grep -q jitterbit_test
