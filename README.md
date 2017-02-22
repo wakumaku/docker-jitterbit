@@ -67,4 +67,5 @@ So, add `-v /your/absolute/logs/path:/opt/jitterbit/logs` on your `run` command 
 ---
 ### ToDo:
 * Prepare to connect external DB
-* Improve bash scripts
+* Improve installation bash scripts
+* Improve build/run test
