@@ -4,6 +4,8 @@
 * https://www.jitterbit.com
 * http://info.jitterbit.com/Cloud-Data-Loader_Request-your-Free-Data-Loader.html
 
+[![Build Status](https://travis-ci.org/wakumaku/docker-jitterbit.svg?branch=master)](https://travis-ci.org/wakumaku/docker-jitterbit)
+
 Standalone Jitterbit Data Loader Agent 
 
 **Be aware that using the following instructions you are exposing your Jitterbit username/password on Dockerfiles nor the command line history**
