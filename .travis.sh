@@ -4,10 +4,10 @@ set -ev
 MAX_ITERATIONS=6
 TIMEOUT_ITERARION=5
 
-sleep 20
+sleep 15
 
 for i in {1..${MAX_ITERATIONS}}; do
-    STATUS=`docker exec -t jitterbit_test jitterbit status`
+    STATUS=`docker exec -t jitterbit_test jitterbit status || true`
     echo "Checking service status ..."
     echo "${STATUS}"
     ASSERT=`echo "${STATUS}" | grep "All services are running" | wc -l`
