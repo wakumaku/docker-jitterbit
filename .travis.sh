@@ -3,7 +3,7 @@
 
 TIMEOUT_ITERATION=5
 
-sleep 5
+sleep $1
 
 for i in {1..5}; do
     STATUS=`docker exec -t jitterbit_test jitterbit status || true`

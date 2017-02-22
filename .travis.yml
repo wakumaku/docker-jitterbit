@@ -9,4 +9,11 @@ install:
 
 script:
   - docker ps | grep -q jitterbit_test
-  - ./.travis.sh
+  - echo "Wait while jitterbit is initializing for the firtst time"
+  - ./.travis.sh 20
+  - docker exec -t jitterbit_test jitterbit stop
+  - docker stop jitterbit_test
+  - docker start jitterbit_test
+  - docker ps | grep -q jitterbit_test 
+  - docker exec -t jitterbit_test jitterbit start 
+  - ./.travis.sh 1
