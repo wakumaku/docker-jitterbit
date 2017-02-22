@@ -3,9 +3,10 @@ sudo: required
 services:
   - docker
 
-before_install:
+install:
   - docker build -t wakumaku/jitterbit_test .
+  - docker run -d --name jitterbit_test -t wakumaku/jitterbit_test
 
 script:
-  - docker run -d --name jitterbit_test -t wakumaku/jitterbit_test
+  - docker ps | grep -q jitterbit_test
   - ./.travis.sh
