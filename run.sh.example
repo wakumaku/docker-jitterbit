@@ -5,7 +5,7 @@ docker run -d\
     --env JB_USERNAME="your@email.tld" \
     --env JB_PASSWORD="jitterbit_password" \
     --env JB_ORGANIZATION="organization name" \
-    --env JB_AGENTGROUP="agent group name" \
+    --env JB_AGENT_GROUP="agent group name" \
     --env JB_AGENT="agent name" \
     -p 46914:46914 \
     -t wakumaku/jitterbit:latest

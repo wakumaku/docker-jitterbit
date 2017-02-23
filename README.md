@@ -4,9 +4,13 @@
 * https://www.jitterbit.com
 * http://info.jitterbit.com/Cloud-Data-Loader_Request-your-Free-Data-Loader.html
 
+Standalone Jitterbit Data Loader Agent
+
 [![Build Status](https://travis-ci.org/wakumaku/docker-jitterbit.svg?branch=master)](https://travis-ci.org/wakumaku/docker-jitterbit)
 
-Standalone Jitterbit Data Loader Agent 
+Available Tags:
+* v8.20.0.7
+* v8.17.0.2
 
 **Be aware that using the following instructions you are exposing your Jitterbit username/password on Dockerfiles nor the command line history**
 
@@ -20,7 +24,7 @@ FROM wakumaku/jitterbit:latest
 ENV JB_USERNAME your@email.tld
 ENV JB_PASSWORD jitterbit_password
 ENV JB_ORGANIZATION organization name
-ENV JB_AGENTGROUP agent group name
+ENV JB_AGENT_GROUP agent group name
 ENV JB_AGENT agent name
 ```
 
@@ -41,7 +45,7 @@ docker run -d \
     --env JB_USERNAME="your@email.tld" \
     --env JB_PASSWORD="jitterbit_password" \
     --env JB_ORGANIZATION="organization name" \
-    --env JB_AGENTGROUP="agent group name" \
+    --env JB_AGENT_GROUP="agent group name" \
     --env JB_AGENT="agent name" \
     -p 46914:46914 \
     -t wakumaku/jitterbit:latest
@@ -55,6 +59,7 @@ docker run -d \
 ```
 docker exec -t my_jitterbit_container jitterbit status
 ```
+
 
 **Logs:**
 ```

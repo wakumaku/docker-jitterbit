@@ -1,6 +1,6 @@
 ###############################################################################
 # Jitterbit Data Loader Agent
-# Version: 8.17.0.2
+# Version: 8.20.0.7
 # Made at (bandit.io)
 ###############################################################################
 FROM phusion/baseimage:0.9.19
@@ -8,7 +8,7 @@ FROM phusion/baseimage:0.9.19
 ###############################################################################
 ENV INSTALL_DIR=/opt/install \
     INSTALL_FILE=jibberbit.deb \
-    JITTERBIT_LINK=https://download.jitterbit.com/v8/agent/8.17/jitterbit-agent_8.17.0.2_i386.deb \
+    JITTERBIT_LINK=https://download.jitterbit.com/v8/agent/8.20/jitterbit-agent_8.20.0.7_i386.deb \
     JITTERBIT_HOME=/opt/jitterbit
 
 ADD ${JITTERBIT_LINK} ${INSTALL_DIR}/${INSTALL_FILE}
