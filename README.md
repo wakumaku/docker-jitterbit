@@ -13,7 +13,7 @@ Available Tags:
 * v8.20.0.7
 * v8.17.0.2
 
-**Be aware that using the following instructions you are exposing your Jitterbit username/password on Dockerfiles nor the command line history**
+**Be aware that using the following instructions you will expose your Jitterbit username/password on Dockerfiles nor the command line history**
 
 ---
 ### How to build:
