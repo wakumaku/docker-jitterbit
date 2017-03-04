@@ -9,6 +9,7 @@ Standalone Jitterbit Data Loader Agent
 [![Build Status](https://travis-ci.org/wakumaku/docker-jitterbit.svg?branch=master)](https://travis-ci.org/wakumaku/docker-jitterbit)
 
 Available Tags:
+* v8.21.1.2
 * v8.21.0.2
 * v8.20.0.7
 * v8.17.0.2
