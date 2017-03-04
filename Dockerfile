@@ -7,7 +7,7 @@ FROM phusion/baseimage:0.9.19
 ###############################################################################
 ENV V_MAJOR=8 \
     V_MINOR=21 \
-    V_PATCH=0 \
+    V_PATCH=1 \
     V_BUILD=2 \
     INSTALL_DIR=/opt/install \
     INSTALL_FILE=jibberbit.deb \
