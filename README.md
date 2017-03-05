@@ -44,14 +44,16 @@ docker run -d -p 46914:46914 -t my_jitterbit_image
 
 ```
 docker run -d \
-    --env JB_USERNAME="your@email.tld" \
-    --env JB_PASSWORD="jitterbit_password" \
-    --env JB_ORGANIZATION="organization name" \
-    --env JB_AGENT_GROUP="agent group name" \
-    --env JB_AGENT="agent name" \
+    --env JB_USERNAME=your@email.tld \
+    --env JB_PASSWORD=jitterbit_password \
+    --env JB_ORGANIZATION=organization name \
+    --env JB_AGENT_GROUP=agent group name \
+    --env JB_AGENT=agent name \
     -p 46914:46914 \
     -t wakumaku/jitterbit:latest
 ```
+
+[![asciicast](https://asciinema.org/a/105786.png)](https://asciinema.org/a/105786)
 
 
 ---
