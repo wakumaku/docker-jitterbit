@@ -27,6 +27,7 @@ Available Tags:
     * v8.22.1.2
         * v8.22.0.10 v8.22.0.7 v8.22.0.6 v8.22.0.4 v8.22.0.3 v8.22.0.2
 * v8.23.0.11 v8.23.0.10 v8.23.0.9 v8.23.0.8 v8.23.0.6 v8.23.0.5 v8.23.0.2
+* v8.24.1.1
 
 **Be aware that using the following instructions you will expose your Jitterbit username/password on Dockerfiles nor the command line history**
 
