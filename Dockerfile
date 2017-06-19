@@ -37,7 +37,7 @@ RUN chmod +x /etc/my_init.d/*.sh && \
 ENV V_MAJOR=8 \
     V_MINOR=23 \
     V_PATCH=0 \
-    V_BUILD=5
+    V_BUILD=6
 
 ENV JITTERBIT_LINK=https://download.jitterbit.com/v${V_MAJOR}/agent/${V_MAJOR}.${V_MINOR}/jitterbit-agent_${V_MAJOR}.${V_MINOR}.${V_PATCH}.${V_BUILD}_i386.deb
 
